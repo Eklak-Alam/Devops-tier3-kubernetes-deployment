@@ -1,5 +1,5 @@
 # 1. Use the lightweight Alpine Node image (only ~50MB)
-FROM node:18-alpine
+FROM node:20-alpine
 
 # 2. Set the working directory inside the container
 WORKDIR /app

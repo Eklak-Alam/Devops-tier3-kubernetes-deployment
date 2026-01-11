@@ -1,5 +1,5 @@
-# 1. Use lightweight Node image
-FROM node:18-alpine
+# 1. Use Node 20 (Required for Next.js 15/16)
+FROM node:20-alpine
 
 # 2. Set working directory
 WORKDIR /app
@@ -14,7 +14,6 @@ RUN npm install
 COPY . .
 
 # 6. Build the Next.js application for production
-# This creates the optimized .next folder
 RUN npm run build
 
 # 7. Expose the standard Next.js port
