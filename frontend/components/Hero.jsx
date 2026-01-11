@@ -10,7 +10,7 @@ export default function Hero() {
   const [newName, setNewName] = useState('');
   const [newReplicas, setNewReplicas] = useState(1);
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://13.203.231.198:5000';
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://13.203.231.198:30001';
 
   // --- 1. FETCH DATA (READ) ---
   useEffect(() => {
